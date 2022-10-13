@@ -13,7 +13,9 @@ const respuestas = {
   10: 'Preguntale al diego, que me rompes las bolas a mi.',
   11: 'No, al igual que Central ganando un campeonato cagaste',
   12: 'Esta mas al horno que patronato',
-  13: 'Jajajajaja'
+  13: 'Jajajajaja',
+  14: 'Tu mama',
+  15: 'La mama del juank'
 }
 
 module.exports = {
@@ -26,6 +28,6 @@ module.exports = {
         .setRequired(true)),
   async execute (interaction) {
     const pregunta = interaction.options.getString('input')
-    await interaction.reply(` Pregunta: ${pregunta}\nRespuesta: ${respuestas[Math.floor(Math.random() * 14)]}`)
+    await interaction.reply(` Pregunta: ${pregunta}\nRespuesta: ${respuestas[Math.floor(Math.random() * 16)]}`)
   }
 }
