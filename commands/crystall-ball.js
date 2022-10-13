@@ -26,6 +26,6 @@ module.exports = {
         .setRequired(true)),
   async execute (interaction) {
     const pregunta = interaction.options.getString('input')
-    await interaction.reply(` Pregunta: ${pregunta}\nRespuesta: ${respuestas[Math.floor(Math.random() * 13)]}`)
+    await interaction.reply(` Pregunta: ${pregunta}\nRespuesta: ${respuestas[Math.floor(Math.random() * 14)]}`)
   }
 }
